@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Automica\AutomicaBlueprintHelper;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Automica\AutomicaBlueprintHelper\Commands\AutomicaBlueprintHelperCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class AutomicaBlueprintHelperServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('automica-blueprint-helper')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_automica_blueprint_helper_table')
+            ->hasCommand(AutomicaBlueprintHelperCommand::class);
     }
 }

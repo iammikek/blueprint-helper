@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Automica\AutomicaBlueprintHelper\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class AutomicaBlueprintHelperCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'automica-blueprint-helper';
 
     public $description = 'My command';
 

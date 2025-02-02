@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "iammikek/automica-blueprint-helper",
+    "description": "This is my package automica-blueprint-helper",
     "keywords": [
-        ":vendor_name",
+        "Automica Labs",
         "laravel",
-        ":package_slug"
+        "automica-blueprint-helper"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/iammikek/automica-blueprint-helper",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Mike Karthauser",
+            "email": "mike@automica.io",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Automica\\AutomicaBlueprintHelper\\": "src/",
+            "Automica\\AutomicaBlueprintHelper\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Automica\\AutomicaBlueprintHelper\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Automica\\AutomicaBlueprintHelper\\AutomicaBlueprintHelperServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "AutomicaBlueprintHelper": "Automica\\AutomicaBlueprintHelper\\Facades\\AutomicaBlueprintHelper"
             }
         }
     },
