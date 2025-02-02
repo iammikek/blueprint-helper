@@ -2,9 +2,9 @@
 
 namespace Automica\AutomicaBlueprintHelper\Tests;
 
+use Automica\AutomicaBlueprintHelper\AutomicaBlueprintHelperServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Automica\AutomicaBlueprintHelper\AutomicaBlueprintHelperServiceProvider;
 
 class TestCase extends Orchestra
 {

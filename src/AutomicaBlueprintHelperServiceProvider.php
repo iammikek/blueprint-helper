@@ -2,9 +2,9 @@
 
 namespace Automica\AutomicaBlueprintHelper;
 
+use Automica\AutomicaBlueprintHelper\Commands\AutomicaBlueprintHelperCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Automica\AutomicaBlueprintHelper\Commands\AutomicaBlueprintHelperCommand;
 
 class AutomicaBlueprintHelperServiceProvider extends PackageServiceProvider
 {
