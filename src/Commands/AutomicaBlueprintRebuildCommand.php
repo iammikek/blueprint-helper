@@ -30,11 +30,6 @@ class AutomicaBlueprintRebuildCommand extends Command
         return self::SUCCESS;
     }
 
-    /**
-     * @param string $string
-     * @param array $params
-     * @return void
-     */
     private function command(string $string, array $params = []): void
     {
         $exitCode = $this->call($string, $params);
@@ -53,6 +48,6 @@ class AutomicaBlueprintRebuildCommand extends Command
 
     private function reset(): void
     {
-        copy('https://raw.githubusercontent.com/laravel/laravel/refs/heads/11.x/routes/web.php', base_path() . '/routes/web.php');
+        copy('https://raw.githubusercontent.com/laravel/laravel/refs/heads/11.x/routes/web.php', base_path().'/routes/web.php');
     }
 }
