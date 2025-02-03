@@ -4,7 +4,7 @@ namespace Automica\AutomicaBlueprintHelper;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Automica\AutomicaBlueprintHelper\Commands\AutomicaBlueprintHelperCommand;
+use Automica\AutomicaBlueprintHelper\Commands\AutomicaBlueprintRebuildCommand;
 
 class AutomicaBlueprintHelperServiceProvider extends PackageServiceProvider
 {
@@ -18,8 +18,6 @@ class AutomicaBlueprintHelperServiceProvider extends PackageServiceProvider
         $package
             ->name('automica-blueprint-helper')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_automica_blueprint_helper_table')
-            ->hasCommand(AutomicaBlueprintHelperCommand::class);
+            ->hasCommand(AutomicaBlueprintRebuildCommand::class);
     }
 }
