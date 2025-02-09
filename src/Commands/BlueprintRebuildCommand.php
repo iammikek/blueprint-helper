@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Automica\AutomicaBlueprintHelper\Commands;
+namespace Automica\BlueprintHelper\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;

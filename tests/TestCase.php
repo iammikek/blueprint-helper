@@ -1,8 +1,8 @@
 <?php
 
-namespace Automica\AutomicaBlueprintHelper\Tests;
+namespace Automica\BlueprintHelper\Tests;
 
-use Automica\AutomicaBlueprintHelper\BlueprintHelperServiceProvider;
+use Automica\BlueprintHelper\BlueprintHelperServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 

@@ -52,7 +52,7 @@ php artisan vendor:publish --tag="blueprint-helper-views"
 ## Usage
 
 ```php
-$automicaBlueprintHelper = new Automica\AutomicaBlueprintHelper();
+$automicaBlueprintHelper = new Automica\BlueprintHelper();
 echo $automicaBlueprintHelper->echoPhrase('Hello, Automica!');
 ```
 
