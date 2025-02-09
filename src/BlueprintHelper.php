@@ -1,5 +1,5 @@
 <?php
 
-namespace Automica\AutomicaBlueprintHelper;
+namespace Automica\BlueprintHelper;
 
 class BlueprintHelper {}
