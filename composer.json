@@ -35,8 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Automica\\BlueprintHelper\\": "src/",
-            "Automica\\BlueprintHelper\\Database\\Factories\\": "database/factories/"
+            "Automica\\BlueprintHelper\\": "src/"
         }
     },
     "autoload-dev": {
@@ -64,10 +63,7 @@
         "laravel": {
             "providers": [
                 "BlueprintHelperServiceProvider"
-            ],
-            "aliases": {
-                "AutomicaBlueprintHelper": "BlueprintHelper"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
