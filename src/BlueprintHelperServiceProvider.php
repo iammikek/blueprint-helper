@@ -1,6 +1,6 @@
 <?php
 
-namespace Automica\AutomicaBlueprintHelper;
+namespace Automica\BlueprintHelper;
 
 use Automica\AutomicaBlueprintHelper\Commands\BlueprintRebuildCommand;
 use Spatie\LaravelPackageTools\Package;

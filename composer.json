@@ -1,6 +1,6 @@
 {
     "name": "iammikek/blueprint-helper",
-    "description": "Fixing some niggles with laravel blueprint",
+    "description": "Fixes some paper cuts within laravel blueprint",
     "keywords": [
         "Automica Labs",
         "laravel",
@@ -18,7 +18,7 @@
     "require": {
         "php": "^8.4",
         "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^10.0||^11.0"
+        "illuminate/contracts": "^10.0||^11.0||^12.0"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Automica\\AutomicaBlueprintHelper\\": "src/",
-            "Automica\\AutomicaBlueprintHelper\\Database\\Factories\\": "database/factories/"
+            "Automica\\BlueprintHelper\\": "src/",
+            "Automica\\BlueprintHelper\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Automica\\AutomicaBlueprintHelper\\Tests\\": "tests/",
+            "Automica\\BlueprintHelper\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
