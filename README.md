@@ -20,14 +20,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require iammikek/blueprint-helper
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="blueprint-helper-migrations"
-php artisan migrate
+composer require  --dev iammikek/blueprint-helper
 ```
 
 You can publish the config file with:
@@ -43,17 +36,12 @@ return [
 ];
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="blueprint-helper-views"
-```
-
 ## Usage
 
+This package provides some commands to extend on lara
+
 ```php
-$automicaBlueprintHelper = new Automica\BlueprintHelper();
-echo $automicaBlueprintHelper->echoPhrase('Hello, Automica!');
+
 ```
 
 ## Testing
