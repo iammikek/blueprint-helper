@@ -1,16 +1,16 @@
 <?php
 
-namespace Automica\AutomicaBlueprintHelper\Facades;
+namespace Automica\BlueprintHelper\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Automica\AutomicaBlueprintHelper\BlueprintHelper
+ * @see \Automica\BlueprintHelper\BlueprintHelper
  */
 class BlueprintHelper extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Automica\AutomicaBlueprintHelper\BlueprintHelper::class;
+        return \Automica\BlueprintHelper\BlueprintHelper::class;
     }
 }
