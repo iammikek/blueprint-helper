@@ -2,11 +2,11 @@
 
 namespace Automica\AutomicaBlueprintHelper;
 
-use Automica\AutomicaBlueprintHelper\Commands\AutomicaBlueprintRebuildCommand;
+use Automica\AutomicaBlueprintHelper\Commands\BlueprintRebuildCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class AutomicaBlueprintHelperServiceProvider extends PackageServiceProvider
+class BlueprintHelperServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,8 +16,8 @@ class AutomicaBlueprintHelperServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('automica-blueprint-helper')
+            ->name('blueprint-helper')
             ->hasConfigFile()
-            ->hasCommand(AutomicaBlueprintRebuildCommand::class);
+            ->hasCommand(BlueprintRebuildCommand::class);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-// config for Automica/AutomicaBlueprintHelper
+// config for Automica/BlueprintHelper
 return [
 
 ];

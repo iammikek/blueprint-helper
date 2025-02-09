@@ -7,7 +7,7 @@ namespace Automica\AutomicaBlueprintHelper\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 
-class AutomicaBlueprintRebuildCommand extends Command
+class BlueprintRebuildCommand extends Command
 {
     public $signature = 'blueprint:rebuild';
 

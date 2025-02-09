@@ -2,4 +2,4 @@
 
 namespace Automica\AutomicaBlueprintHelper;
 
-class AutomicaBlueprintHelper {}
+class BlueprintHelper {}

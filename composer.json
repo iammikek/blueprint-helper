@@ -1,12 +1,12 @@
 {
-    "name": "iammikek/automica-blueprint-helper",
-    "description": "This is my package automica-blueprint-helper",
+    "name": "iammikek/blueprint-helper",
+    "description": "Fixing some niggles with laravel blueprint",
     "keywords": [
         "Automica Labs",
         "laravel",
-        "automica-blueprint-helper"
+        "blueprint-helper"
     ],
-    "homepage": "https://github.com/iammikek/automica-blueprint-helper",
+    "homepage": "https://github.com/iammikek/blueprint-helper",
     "license": "MIT",
     "authors": [
         {
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Automica\\AutomicaBlueprintHelper\\AutomicaBlueprintHelperServiceProvider"
+                "BlueprintHelperServiceProvider"
             ],
             "aliases": {
-                "AutomicaBlueprintHelper": "Automica\\AutomicaBlueprintHelper\\Facades\\AutomicaBlueprintHelper"
+                "AutomicaBlueprintHelper": "BlueprintHelper"
             }
         }
     },
