@@ -61,9 +61,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "BlueprintHelperServiceProvider"
-            ]
+            "dont-discover": []
         }
     },
     "minimum-stability": "dev",
