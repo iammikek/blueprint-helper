@@ -5,8 +5,8 @@ namespace Automica\BlueprintHelper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 
-class BlueprintHelper extends Command {
-
+class BlueprintHelper extends Command
+{
     public function command(string $string, array $params = []): void
     {
         $exitCode = $this->call($string, $params);
