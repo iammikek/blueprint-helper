@@ -7,6 +7,15 @@ use Illuminate\Support\Facades\Artisan;
 
 class BlueprintHelper extends Command
 {
+    private string $source = 'https://raw.githubusercontent.com/laravel/laravel/refs/heads/master';
+
+    private array $files = [
+        '/routes/web.php',
+        '/database/migrations/0001_01_01_000000_create_users_table.php',
+        '/database/migrations/0001_01_01_000001_create_cache_table.php',
+        '/database/migrations/0001_01_01_000002_create_jobs_table.php',
+    ];
+
     public function command(string $string, array $params = []): void
     {
         $exitCode = $this->call($string, $params);
@@ -25,14 +34,14 @@ class BlueprintHelper extends Command
 
     public function reset(): void
     {
-        copy('https://raw.githubusercontent.com/laravel/laravel/refs/heads/11.x/routes/web.php', base_path().'/routes/web.php');
+        $source = $this->source;
 
-        // delete migrations
-        array_map('unlink', array_filter((array) glob(base_path()."/database/migrations/*")));
+        // delete local migrations
+        array_map('unlink', array_filter((array)glob(base_path() . "/database/migrations/*")));
 
-        // copy across what we need
-        copy('https://raw.githubusercontent.com/laravel/laravel/refs/heads/11.x/database/migrations/0001_01_01_000000_create_users_table.php', base_path().'/database/migrations/0001_01_01_000000_create_users_table.php');
-        copy('https://raw.githubusercontent.com/laravel/laravel/refs/heads/11.x/database/migrations/0001_01_01_000001_create_cache_table.php', base_path().'/database/migrations/0001_01_01_000001_create_cache_table.php');
-        copy('https://raw.githubusercontent.com/laravel/laravel/refs/heads/11.x/database/migrations/0001_01_01_000002_create_jobs_table.php', base_path().'/database/migrations/0001_01_01_000002_create_jobs_table.php');
+        // recreate from master
+        collect($this->files)->each(function ($file) use ($source) {
+            copy("{$source}{$$file}", base_path() . $file);
+        });
     }
 }
