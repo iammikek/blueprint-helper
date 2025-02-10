@@ -2,6 +2,10 @@
 
 All notable changes to `blueprint-helper` will be documented in this file.
 
+## v0.0.10 - 2025-02-10
+
+**Full Changelog**: https://github.com/iammikek/blueprint-helper/compare/v0.0.9...v0.0.10
+
 ## v0.0.9 - 2025-02-10
 
 **Full Changelog**: https://github.com/iammikek/blueprint-helper/compare/v0.0.8...v0.0.9
