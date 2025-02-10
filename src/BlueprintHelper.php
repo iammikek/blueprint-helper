@@ -39,24 +39,24 @@ class BlueprintHelper extends Command
         $source = $this->source;
 
         // delete migrations
-        array_map('unlink', array_filter((array)glob(base_path() . "/database/migrations/*")));
+        array_map('unlink', array_filter((array) glob(base_path().'/database/migrations/*')));
 
         // recreate from master
         collect($this->files)->each(function ($file) use ($source) {
-            copy("{$source}{$file}", base_path() . $file);
+            copy("{$source}{$file}", base_path().$file);
         });
     }
 
     public function reseed(): bool
     {
-        $directory = base_path() . '/database/seeders/';
+        $directory = base_path().'/database/seeders/';
 
         $files = scandir($directory);
 
         collect($files)->values()
             ->filter(function ($file) {
                 return str_ends_with($file, '.php');
-            })->each(function ($file){
+            })->each(function ($file) {
                 $file = str_replace('.php', '', $file);
                 $this->command('db:seed', ['--class' => $file]);
             });

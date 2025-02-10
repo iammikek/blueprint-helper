@@ -6,7 +6,7 @@ use Automica\BlueprintHelper\BlueprintHelper;
 
 it('can reseed', function () {
 
-    $sot = new BlueprintHelper();
+    $sot = new BlueprintHelper;
 
     expect($sot->reseed())->toBeTrue();
 });
