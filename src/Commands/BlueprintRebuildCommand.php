@@ -20,9 +20,9 @@ class BlueprintRebuildCommand extends BlueprintHelper
 
         $this->command('blueprint:build');
 
-        $this->command('migrate:fresh', [
-            '--seed' => true,
-        ]);
+        $this->command('migrate:fresh');
+
+        $this->reseed();
 
         $this->comment('All done');
 
