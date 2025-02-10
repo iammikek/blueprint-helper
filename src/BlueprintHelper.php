@@ -28,7 +28,7 @@ class BlueprintHelper extends Command
         copy('https://raw.githubusercontent.com/laravel/laravel/refs/heads/11.x/routes/web.php', base_path().'/routes/web.php');
 
         // delete migrations
-        array_map('unlink', array_filter((array) glob(base_path()."/database/migrations/*")));
+        array_map('unlink', array_filter((array) glob(base_path().'/database/migrations/*')));
 
         // copy across what we need
         copy('https://raw.githubusercontent.com/laravel/laravel/refs/heads/11.x/database/migrations/0001_01_01_000000_create_users_table.php', base_path().'/database/migrations/0001_01_01_000000_create_users_table.php');
