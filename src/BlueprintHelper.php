@@ -38,7 +38,7 @@ class BlueprintHelper extends Command
     {
         $source = $this->source;
 
-        // delete local database
+        // delete migrations
         array_map('unlink', array_filter((array)glob(base_path() . "/database/migrations/*")));
 
         // recreate from master
